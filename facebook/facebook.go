@@ -1,18 +1,6 @@
 // Package facebook implement OAuth2 authentication for Facebook Graph
 // providing an handler (GraphHandler) which perform OAuth token authorization
 // and exchange.
-
-// Facebook Graph Request Flow
-//
-// -- Facebook check if current user has authorized the app, if not
-//    redirect the user to the app authorization dialog (AuthorizeRedirectUrl)
-//
-// -- App is authorized, facebook point back to redirect_uri passing a 'code' parameter
-//    into the query string
-//
-// -- Code parameter has to be exchanged with an access token (TokenExchangeUrl)
-//
-// -- You can use access_token to make other requests (ex. UserDataUrl)
 package facebook
 
 import (
